@@ -1,7 +1,7 @@
 # FastForward\Clock
 
 [![PHP Version](https://img.shields.io/badge/php-8.3%2B-blue.svg)](https://www.php.net/)
-[![Composer Package](https://img.shields.io/badge/composer-fast--forward%clock-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/clock)
+[![Composer Package](https://img.shields.io/badge/composer-fast--forward%2Fclock-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/clock)
 [![PSR-20](https://img.shields.io/badge/PSR--20-clock-777bb4.svg)](https://www.php-fig.org/psr/psr-20/)
 [![Tests](https://github.com/php-fast-forward/clock/actions/workflows/tests.yml/badge.svg)](https://github.com/php-fast-forward/clock/actions/workflows/tests.yml)
 [![Coverage](https://img.shields.io/badge/coverage-phpunit-green)](https://php-fast-forward.github.io/clock/coverage/index.html)
