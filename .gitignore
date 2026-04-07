@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+backup/
+public/
+tmp/
+vendor/
+.DS_Store
+composer.lock
+*.cache

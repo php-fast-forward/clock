@@ -1,0 +1,71 @@
+{
+    "name": "fast-forward/clock",
+    "description": "A PSR-20 compliant clock implementation for PHP, with support for time zones and a service provider for easy integration with Fast Forward Container.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "php",
+        "clock",
+        "psr-20",
+        "service provider",
+        "container",
+        "fast-forward"
+    ],
+    "authors": [
+        {
+            "name": "Felipe Sayão Lobato Abreu",
+            "email": "github@mentordosnerds.com"
+        }
+    ],
+    "homepage": "https://github.com/php-fast-forward",
+    "support": {
+        "issues": "https://github.com/php-fast-forward/clock/issues",
+        "source": "https://github.com/php-fast-forward/clock"
+    },
+    "require": {
+        "php": "^8.3",
+        "fast-forward/config": "^1.4",
+        "fast-forward/container": "^1.6",
+        "psr/clock": "^1.0"
+    },
+    "require-dev": {
+        "fast-forward/dev-tools": "dev-main"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "FastForward\\Clock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FastForward\\Clock\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "fast-forward/dev-tools": true,
+            "infection/extension-installer": true,
+            "phpdocumentor/shim": true,
+            "phpro/grumphp": true,
+            "pyrech/composer-changelogs": true
+        },
+        "platform": {
+            "php": "8.3.0"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "grumphp": {
+            "config-default-path": "vendor/fast-forward/dev-tools/grumphp.yml"
+        }
+    },
+    "scripts": {
+        "dev-tools": "dev-tools",
+        "dev-tools:fix": "@dev-tools --fix"
+    }
+}
