@@ -1,7 +1,7 @@
 # FastForward\Clock
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/php-fast-forward/clock/b0744dd91b2d6cef4e256017880df0c5b68b200a/docs/_static/mascot-banner.png" alt="Dash comparing a running clock with a frozen clock" width="840">
+  <img src="docs/_static/mascot-banner.png" alt="Dash comparing a running clock with a frozen clock" width="840">
 </p>
 
 [![PHP Version](https://img.shields.io/badge/php-8.3%2B-blue.svg)](https://www.php.net/)
