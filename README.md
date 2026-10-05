@@ -1,5 +1,9 @@
 # FastForward\Clock
 
+<p align="center">
+  <img src="assets/brand/dash.png" alt="Dash, the PHP Fast Forward fox, wearing a purple hoodie" width="320">
+</p>
+
 [![PHP Version](https://img.shields.io/badge/php-8.3%2B-blue.svg)](https://www.php.net/)
 [![Composer Package](https://img.shields.io/badge/composer-fast--forward%2Fclock-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/clock)
 [![PSR-20](https://img.shields.io/badge/PSR--20-clock-777bb4.svg)](https://www.php-fig.org/psr/psr-20/)
