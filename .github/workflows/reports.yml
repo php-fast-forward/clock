@@ -2,16 +2,16 @@ name: "Fast Forward Reports"
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
   workflow_dispatch:
 
+# Caller permissions cap the callee; only its isolated deploy job writes Pages.
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
+  pages: write # Allows the callee's isolated main-only Pages deployment.
+  id-token: write # Allows OIDC authentication for that Pages deployment.
 
 jobs:
   reports:
-    uses: php-fast-forward/dev-tools/.github/workflows/reports.yml@main
-    secrets: inherit
+    uses: php-fast-forward/dev-tools/.github/workflows/reports-native.yml@main
