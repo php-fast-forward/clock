@@ -1,5 +1,9 @@
 # FastForward\Clock
 
+<p align="center">
+  <img src="docs/_static/mascot-banner.png" alt="Dash comparing a running clock with a frozen clock" width="840">
+</p>
+
 [![PHP Version](https://img.shields.io/badge/php-8.3%2B-blue.svg)](https://www.php.net/)
 [![Composer Package](https://img.shields.io/badge/composer-fast--forward%2Fclock-F28D1A.svg?logo=composer&logoColor=white)](https://packagist.org/packages/fast-forward/clock)
 [![PSR-20](https://img.shields.io/badge/PSR--20-clock-777bb4.svg)](https://www.php-fig.org/psr/psr-20/)
