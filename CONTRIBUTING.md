@@ -32,3 +32,13 @@ creates its version tag and GitHub Release. The workflow never merges PRs.
 GitHub Release. The workflow preserves that evidence with `source: github`.
 Empty release bodies
 still need editorial review; no PR attribution is inferred from prose alone.
+
+## Container consumer skill
+
+The same development-only manager also restores `fast-forward-container` from
+`php-fast-forward/container` within `^1.10.0`, alongside the other configured
+skills. Inspect all sources with `composer skills:show` and refresh them with
+`composer skills:update --from=github`. Generated copies stay ignored; this
+configuration does not upgrade the runtime library. Check the installed
+Container version before following the skill: its API contract supports `^1.10`
+and requires reporting earlier versions instead of assuming compatibility.
