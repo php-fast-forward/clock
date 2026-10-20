@@ -29,7 +29,8 @@
         "psr/clock": "^1.0"
     },
     "require-dev": {
-        "fast-forward/dev-tools": "dev-main"
+        "fast-forward/dev-tools": "dev-main",
+        "llm/skills": "^1.15"
     },
     "minimum-stability": "stable",
     "autoload": {
@@ -49,7 +50,8 @@
             "infection/extension-installer": true,
             "phpdocumentor/shim": true,
             "phpro/grumphp": true,
-            "pyrech/composer-changelogs": true
+            "pyrech/composer-changelogs": true,
+            "llm/skills": true
         },
         "platform": {
             "php": "8.3.0"

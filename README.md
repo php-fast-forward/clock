@@ -294,6 +294,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 Issues, documentation improvements, and pull requests are welcome!
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for changelog fragments and the release-review flow.
+
 ## 🔗 Links
 
 - [Repository](https://github.com/php-fast-forward/clock)
