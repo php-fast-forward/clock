@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use FastForward\Clock\FrozenClock;
 use FastForward\Clock\ServiceProvider\ClockServiceProvider;
+use FastForward\Clock\ServiceProvider\Factory\DateTimeZoneFactory;
 use FastForward\Clock\SystemClock;
 use FastForward\Config\ConfigInterface;
 use FastForward\Container\ServiceProvider\ArrayServiceProvider;
@@ -51,10 +52,10 @@ $invalid = container(
     new ClockServiceProvider(),
 );
 try {
-    $invalid->get(ClockInterface::class);
+    (new DateTimeZoneFactory())($invalid);
     throw new RuntimeException('Invalid configuration was accepted.');
 } catch (DateInvalidTimeZoneException) {
-    // Configuration failure propagates instead of falling back.
+    // Validate at the factory boundary before container fallback/autowiring.
 }
 
 echo "container: ok\n";

@@ -52,8 +52,16 @@ factory read the settings; merely loading an array does not register it.
 The provider registers `DateTimeZone`, `SystemClock` and a `ClockInterface` alias
 to `SystemClock`. A configured `DateTimeZone` object is reused as-is. Missing
 `ConfigInterface` or a missing raw key falls back to `date_default_timezone_get()`.
-Malformed values and errors retrieving configuration propagate; they do not
-trigger that absence fallback. A null configured value is not an omitted key.
+At the `DateTimeZoneFactory` boundary, malformed values and errors retrieving
+configuration propagate; they do not trigger that absence fallback. A null
+configured value is not an omitted key. A composed container may wrap factory
+errors or try another source/autowiring route, depending on its version. Do not
+use successful clock resolution as validation of timezone configuration.
+When invalid settings must fail before service resolution, invoke
+`(new DateTimeZoneFactory())($container)` explicitly after composition and before
+requesting the clock, with an import of
+`FastForward\Clock\ServiceProvider\Factory\DateTimeZoneFactory`. The bundled
+program verifies the invalid-input exception at that boundary.
 
 Earlier container sources win. To override the PSR clock for tests, put an
 `ArrayServiceProvider` binding `ClockInterface::class` to a preconstructed
