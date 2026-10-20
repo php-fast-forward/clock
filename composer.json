@@ -32,6 +32,9 @@
         "fast-forward/dev-tools": "dev-main",
         "llm/skills": "^1.15"
     },
+    "suggest": {
+        "llm/skills": "Optionally synchronize the bundled agent skill in consumer projects."
+    },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
@@ -59,6 +62,9 @@
         "sort-packages": true
     },
     "extra": {
+        "skills": {
+            "source": "resources/skills"
+        },
         "branch-alias": {
             "dev-main": "1.x-dev"
         },

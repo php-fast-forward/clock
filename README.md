@@ -37,6 +37,14 @@ Requirements:
 
 ## 🛠️ Usage
 
+### Agent skill
+
+The package ships [fast-forward-clock](resources/skills/fast-forward-clock/SKILL.md),
+a portable consumer skill covering PSR-20, application wiring, timezones and
+deterministic tests. See [installation and lifecycle](docs/agent-skill.md) for
+optional project synchronization or guarded project/global copies. Composer
+does not install or activate the skill automatically.
+
 ### Basic: Get the current time
 
 The simplest way to get the current time is using `SystemClock`:
